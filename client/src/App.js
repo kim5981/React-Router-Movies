@@ -17,7 +17,6 @@ export default function App (props) {
         .get('http://localhost:5001/api/movies') // Study this endpoint with Postman
         .then(res => {
           // Study this response with a breakpoint or log statements
-          console.log("this is movies data", res.data)
           setMovieList(res.data);
           // and set the response data as the 'movieList' slice of state
         })
