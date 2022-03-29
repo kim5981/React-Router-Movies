@@ -35,13 +35,6 @@ export default function App (props) {
   return (
     <div>
       <SavedList list={[ /* This is stretch */]} />
-
-      <div>
-        <Link to="/"> </Link>
-        <Link to="/movies"></Link>
-      </div>
-
-
       <Switch>
         <Route path={ `/:id` }>
           <Movie/>
